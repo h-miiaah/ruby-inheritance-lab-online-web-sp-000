@@ -1,11 +1,11 @@
 class Student < User
 
   def new
-    knowledge = []
+    @knowledge = []
   end
 
-  def learn
-    knowledge << KNOWLEDGE.sample
+  def learn(string)
+    knowledge << string
   end
 
   def knowledge
